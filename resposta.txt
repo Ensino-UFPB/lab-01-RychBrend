@@ -1,1 +1,97 @@
 Coloque aqui todas as respostas das práticas indicadas no README.md
+
+Questão 1:
+
+1 - Qual a sua rede e máscara?
+
+   A minha rede é 172.18.0.0 e a máscara é 255.255.0.0
+
+2 - Qual o seu roteador padrão (default gateway)?
+
+  O roteador padrão é  172.18.0.1. 
+
+3 - Quantas rotas configuradas tem seu computador?
+
+  Possui duas rotas configuradas, a rota 0.0.0.0 e a rota 172.18.0.0
+------------------------------------------------------------------------------------
+Questão 2:
+
+1 - Qual o IP da interface de rede?
+
+  O ip da interface é 172.18.0.2 
+
+2 - Qual a rede e a máscara?
+
+  A rede é 172.18.0.0 e a máscara de rede é /16 ou 255.255.0.0
+
+3 - Qual o nome da interface de rede principal?
+  
+  O nome da interface de rede principal é eth0.
+ ------------------------------------------------------------------------------------
+  Questão 3:
+
+ Ips:
+
+  nslookup www.google.com --> 172.217.28.164
+  nslookup www.whitehouse.gov --> 192.0.66.51
+  nslookup www.rnp.br --> 104.18.27.22
+  nslookup www.ufpb.br -->  150.165.254.52
+-------------------------------------------------------------------------------------
+Questão 4: 
+
+1 - Qual o tempo de resposta?
+     O tempo médio de resposta é igual a 0.036 ms  do Ip 127.0.0.1.
+
+     Qual o tempo de resposta?
+     O tempo média de resposta é igual a 0.48 ms do Ip 172.18.0.2     
+
+2 - Testando a conectividade 
+    
+    ping www.ufpb.br --> 30.926 ms
+    ping www.yahoo.com --> 169.445 ms
+    ping www.brasil.gov.br --> 77.070 ms
+    ping www.dce.ufpb.br --> ping: unknown host
+
+3 -  Analise os tempos de resposta
+  
+    ping www.google.com --> 57.442 ms
+    ping www.rnp.br --> 59.135 ms
+    ping www.whitehouse.gov --> 62.615 ms
+
+    O que pode influenciar as diferenças nos tempos?
+
+      Disponibilidades das rotas, sinal de rede, tráfego. 
+----------------------------------------------------------------------------------------------------
+ Questão 5:     
+
+  - O comando do traceroute  pode não receber respostas de alguns roteadores, porque podem estar configurados para ignorar alguns pacotes ou mesmo bloqueados por firewall,
+  algo que não significa que existe um problema na rede.
+
+----------------------------------------------------------------------------------------------
+Questão 6:
+
+  1 - Liste todas as conexões e portas de escuta
+        Active Internet connections (only servers)
+            Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+            tcp        0      0 127.0.0.11:38205        0.0.0.0:*               LISTEN      -
+            udp        0      0 127.0.0.11:45230        0.0.0.0:*                           -
+  2 - Kernel IP routing table
+        Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+        default         172.18.0.1      0.0.0.0         UG        0 0          0 eth0
+        172.18.0.0      0.0.0.0         255.255.0.0     U         0 0          0 eth0
+
+  Os resultados são iguais.
+
+-----------------------------------------------------------------------------------------
+Questão 7:
+
+1 - Teste a conectividade do servidor web na porta 80:
+    O servidor não respondeu, mostrando a mensagem: Connection closed by foreign host.
+
+2 - Teste a conectividade do serviço FTP na porta 21:
+    O servidor não respondeu, mostrando a mensagem: Server lookup failure:  www.dce.ufpb.br:21, Name or service not known
+----------------------------------------------------------------------------------------------
+
+Q
+
+  
